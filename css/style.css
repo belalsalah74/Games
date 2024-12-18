@@ -1,0 +1,71 @@
+:root {
+    --bs-primary: rgb(58, 73, 123);
+    --bs-primary-rgb: 58,
+        73,
+        123;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+}
+
+header {
+    height: 25vh;
+    background-image: url(../imgs/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+nav {
+    margin-top: -40px;
+
+    .navbar-brand img {
+        width: 40px;
+    }
+
+    .nav-link.link-light {
+
+        &:hover,
+        &:focus,
+        &.active {
+            color: var(--bs-info) !important;
+
+        }
+    }
+}
+
+
+
+.small {
+    font-size: 13px;
+}
+
+.spinner-border {
+    width: 100px;
+    height: 100px;
+}
+
+.card {
+    transition: all 400ms;
+    cursor: pointer;
+
+    .card-img {
+        filter: grayscale(70%);
+    }
+
+
+    &:hover {
+        scale: 1.1;
+
+        .card-img {
+            filter: none;
+        }
+
+        .btn-primary {
+            background-color: var(--bs-btn-hover-bg);
+            border-color: var(--bs-btn-hover-border-color);
+        }
+    }
+}
