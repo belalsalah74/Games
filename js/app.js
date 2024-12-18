@@ -60,6 +60,7 @@ export default class App {
           );
         }
         App.#ui.displayAll(data);
+        this.#handleDetails();
         document.querySelector(".navbar-collapse").classList.remove("show");
       })
     );
