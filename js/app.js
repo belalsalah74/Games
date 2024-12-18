@@ -4,7 +4,7 @@ import Ui from "./ui.js";
 export default class App {
   static #request = new Request();
   static #ui = new Ui();
-  static #baseUrl = "https://www.freetogame.com/api/games";
+  static #baseUrl = "https://www.freetogame.com/api/";
   static #options = {
     method: "GET",
     headers: {
