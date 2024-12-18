@@ -4,7 +4,7 @@ import Ui from "./ui.js";
 export default class App {
   static #request = new Request();
   static #ui = new Ui();
-  static #baseUrl = "https:free-to-play-games-database.p.rapidapi.com/api/";
+  static #baseUrl = "https://www.freetogame.com/api/games";
   static #options = {
     method: "GET",
     headers: {
